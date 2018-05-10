@@ -9,5 +9,13 @@ node {
         def ci_method = load "jenkins_class.groovy"
         ci_method.ci_build_steps()
     }
+    stage('Static code analysis')
+    {
+      echo "Test the code"
+    }
+    stage('Build')
+    {
+      echo "Build the code"
+    }
     }
     }
