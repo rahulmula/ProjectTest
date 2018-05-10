@@ -1,5 +1,5 @@
 node {
-  try {
+  
     stage('checkouts') {
         deleteDir()
         sh 'id'
@@ -16,6 +16,5 @@ node {
     stage('Build')
     {
       echo "Build the code"
-    }
     }
     }
